@@ -3,6 +3,5 @@ FROM alpine
 RUN apk add --update --no-cache netcat-openbsd && rm -rf /var/cache/apk/*
 
 COPY entrypoint.sh /
-RUN chmod u+x /entrypoint.sh
 
 ENTRYPOINT ["/entrypoint.sh"]
